@@ -1,0 +1,189 @@
+
+:root {
+    --green: #2ecc71;
+    --green-dark: #27ae60;
+    --dark: #0f2f1f;
+    --light: #f5fff7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--light);
+    color: #222;
+}
+
+
+nav {
+    background: var(--dark);
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+    color: white;
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: white;
+    margin-left: 22px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ),
+    url('https://images.unsplash.com/photo-1606760227091-3b2b6d3f4f1e?auto=format&fit=crop&w=1400&q=60');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.button {
+    padding: 12px 25px;
+    background: var(--green);
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: var(--green-dark);
+}
+
+.cards {
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 22px;
+    background: var(--green);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--green-dark);
+}
+
+
+.chat-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.chat-box {
+    height: 360px;
+    background: #f2f2f2;
+    padding: 15px;
+    overflow-y: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 85%;
+}
+
+.user {
+    background: var(--green);
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background: #dfeee4;
+    color: #222;
+}
+
+
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+    nav a {
+        margin-left: 12px;
+        font-size: 0.95rem;
+    }
+}
+body {
+    background-image: url('a-sleek-and-modern-bus-races-energetically-down-an-expansive-expressway-during-a-vibrant-sunset-symbolizing-the-concept-of-fastpaced-travel-and-capturing-the-dynamic-essence-of-urban-movement-photo.jpg'); /* Path to your image */
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-position: center;  
+}
